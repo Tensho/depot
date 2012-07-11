@@ -1,13 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+kitty:
+  title: Soft Kitty
+  description: Soft kitty, Warm kitty, Little ball of fur. Happy kitty, Sleepy kitty, Purr, purr, purr.
+  image_url: soft_kitty.jpg
+  price: 150.00
 
-two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+angel:
+  title: Sleepy Angel
+  description: I am sleepy ange... Z-z-z, z-z-z.
+  image_url: sleepy_angel.jpg
+  price: 160.00
+
+angel:
+  title: Famous Giraffe
+  description: This is a very famous giraffe Garold.
+  image_url: famous_giraffe.jpg
+  price: 170.00
