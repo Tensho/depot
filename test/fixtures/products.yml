@@ -12,7 +12,7 @@ angel:
   image_url: sleepy_angel.jpg
   price: 160.00
 
-angel:
+giraffe:
   title: Famous Giraffe
   description: This is a very famous giraffe Garold.
   image_url: famous_giraffe.jpg
