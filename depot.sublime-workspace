@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"ass",
+				"assert_select"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"mi",
+				"minimum"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
 				"im",
-				"img_url"
+				"image_url"
 			],
 			[
 				"new",
@@ -28,10 +52,6 @@
 				"product"
 			],
 			[
-				"ass",
-				"assert"
-			],
-			[
 				"up",
 				"update"
 			],
@@ -48,26 +68,13 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/product.rb",
+			"contents": "class ApplicationController < ActionController::Base\n  protect_from_forgery\n\n  private\n\n  def current_cart\n    Cart.find(session[:cart_id])\n  rescue ActiveRecord::RecordNotFound\n    cart = Cart.create\n    session[:cart_id] = cart.id\n    cart\n  end\n\n  \nend\n",
+			"file": "app/controllers/application_controller.rb",
+			"file_size": 252,
+			"file_write_time": 129866309261025792,
 			"settings":
 			{
-				"buffer_size": 342,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test/functional/products_controller_test.rb",
-			"settings":
-			{
-				"buffer_size": 1164,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test/unit/product_test.rb",
-			"settings":
-			{
-				"buffer_size": 1562,
+				"buffer_size": 256,
 				"line_ending": "Unix"
 			}
 		}
@@ -75,16 +82,32 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 311.0,
 		"selected_items":
 		[
 			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"erb",
+				"Snippet: end (ERB)"
+			],
+			[
+				"pck",
+				"Package Control: Install Package"
+			],
+			[
 				"test",
-				"Snippet: class .. < Test::Unit::TestCase .. end"
+				"Snippet: Create functional test class"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
 			],
 			[
 				"assert",
-				"Snippet: assert(..)"
+				"Snippet: assert_select"
 			],
 			[
 				"valida",
@@ -101,10 +124,6 @@
 			[
 				"p",
 				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: List Packages"
 			]
 		],
 		"width": 472.0
@@ -124,10 +143,28 @@
 	},
 	"file_history":
 	[
-		"/C/Sites/depot/depot.sublime-workspace",
-		"/C/Sites/depot/depot.sublime-project",
+		"/C/Sites/depot/app/views/store/index.html.erb",
+		"/C/Sites/depot/app/assets/stylesheets/application.css.scss",
+		"/C/Sites/depot/test/functional/store_controller_test.rb",
+		"/C/Sites/depot/app/controllers/products_controller.rb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Sites/depot/test/fixtures/products.yml",
+		"/C/Sites/depot/app/views/layouts/application.html.erb",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Sites/depot/test/functional/products_controller_test.rb",
+		"/C/Sites/depot/app/assets/stylesheets/store.css.scss",
+		"/C/Sites/depot/app/controllers/store_controller.rb",
+		"/C/Sites/depot/app/models/product.rb",
+		"/C/Sites/depot/config/routes.rb",
+		"/C/Sites/depot/test/unit/product_test.rb",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Tensho.ttf",
+		"/C/Sites/depot/db/seeds.rb",
+		"/C/Sites/depot/depot.sublime-workspace",
+		"/C/Sites/depot/depot.sublime-project"
 	],
 	"find":
 	{
@@ -164,23 +201,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/product.rb",
+					"file": "app/controllers/application_controller.rb",
 					"settings":
 					{
-						"buffer_size": 342,
+						"buffer_size": 256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								332,
-								332
+								256,
+								256
 							]
 						],
 						"settings":
@@ -192,61 +229,12 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "test/functional/products_controller_test.rb",
-					"settings":
-					{
-						"buffer_size": 1164,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								241,
-								241
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "test/unit/product_test.rb",
-					"settings":
-					{
-						"buffer_size": 1562,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1562,
-								1562
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 525.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -256,7 +244,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"layout":
 	{
@@ -267,11 +255,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -291,6 +286,46 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"applica",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"controller",
+				"app/controllers/products_controller.rb"
+			],
+			[
+				"fixture",
+				"test/fixtures/products.yml"
+			],
+			[
+				"",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"storeinde",
+				"app/views/store/index.html.erb"
+			],
+			[
+				"appli",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"store",
+				"app/assets/stylesheets/store.css.scss"
+			],
+			[
+				"store/i",
+				"app/views/store/index.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			]
 		],
 		"width": 0.0
 	},
