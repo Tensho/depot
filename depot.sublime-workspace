@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"tot",
+				"total_price"
+			],
+			[
+				"n",
+				"notice"
+			],
+			[
+				"res",
+				"respond_to"
+			],
+			[
+				"p",
+				"product_id"
+			],
+			[
+				"ea",
+				"each"
+			],
+			[
+				"co",
+				"counter"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -48,10 +80,6 @@
 				"product"
 			],
 			[
-				"p",
-				"product"
-			],
-			[
 				"up",
 				"update"
 			],
@@ -67,24 +95,17 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "class ApplicationController < ActionController::Base\n  protect_from_forgery\n\n  private\n\n  def current_cart\n    Cart.find(session[:cart_id])\n  rescue ActiveRecord::RecordNotFound\n    cart = Cart.create\n    session[:cart_id] = cart.id\n    cart\n  end\n\n  \nend\n",
-			"file": "app/controllers/application_controller.rb",
-			"file_size": 252,
-			"file_write_time": 129866309261025792,
-			"settings":
-			{
-				"buffer_size": 256,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
 			[
 				"Package Control: ",
 				"Package Control: List Packages"
@@ -114,10 +135,6 @@
 				"Snippet: validates_uniqueness_of"
 			],
 			[
-				"pac",
-				"Package Control: Discover Packages"
-			],
-			[
 				"pa",
 				"Package Control: List Packages"
 			],
@@ -126,7 +143,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 472.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -143,26 +160,47 @@
 	},
 	"file_history":
 	[
+		"/D/Work/Site/script/db archive/db_ugg ver 3.0/db_ugg.ini",
+		"/D/Work/Site/script/db archive/db_ugg ver 3.0/db_ugg_json_web_md5.pl",
+		"/C/Sites/depot/db/migrate/20120713111048_combine_items_in_cart.rb",
+		"/C/Sites/depot/app/models/cart.rb",
+		"/C/Sites/depot/app/views/carts/show.html.erb",
+		"/C/Sites/depot/app/views/layouts/application.html.erb",
+		"/C/Sites/depot/app/assets/stylesheets/carts.css.scss",
+		"/C/Sites/depot/app/assets/stylesheets/products.css.scss",
+		"/C/Sites/depot/app/models/line_item.rb",
+		"/C/Sites/depot/app/controllers/line_items_controller.rb",
+		"/C/Sites/depot/test/functional/carts_controller_test.rb",
+		"/C/Sites/depot/app/controllers/carts_controller.rb",
 		"/C/Sites/depot/app/views/store/index.html.erb",
+		"/C/Sites/depot/app/views/line_items/show.html.erb",
+		"/C/Sites/depot/app/views/line_items/index.html.erb",
+		"/C/Sites/depot/log/development.log",
+		"/C/Sites/depot/app/controllers/store_controller.rb",
+		"/C/Sites/depot/db/migrate/20120709072324_create_products.rb",
+		"/C/Sites/depot/test/fixtures/line_items.yml",
+		"/C/Sites/depot/db/seeds.rb",
+		"/C/Sites/depot/test/functional/line_items_controller_test.rb",
+		"/C/Sites/depot/db/migrate/20120713105427_add_quantity_to_line_items.rb",
+		"/C/Sites/depot/db/migrate/20120713060210_create_line_items.rb",
+		"/C/Sites/depot/app/assets/stylesheets/store.css.scss",
+		"/C/Sites/depot/test/functional/products_controller_test.rb",
+		"/C/Sites/depot/app/models/product.rb",
+		"/C/Sites/depot/app/controllers/application_controller.rb",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Sites/depot/app/views/products/new.html.erb",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Sites/depot/app/assets/stylesheets/application.css.scss",
 		"/C/Sites/depot/test/functional/store_controller_test.rb",
 		"/C/Sites/depot/app/controllers/products_controller.rb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Sites/depot/test/fixtures/products.yml",
-		"/C/Sites/depot/app/views/layouts/application.html.erb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/Sites/depot/test/functional/products_controller_test.rb",
-		"/C/Sites/depot/app/assets/stylesheets/store.css.scss",
-		"/C/Sites/depot/app/controllers/store_controller.rb",
-		"/C/Sites/depot/app/models/product.rb",
 		"/C/Sites/depot/config/routes.rb",
 		"/C/Sites/depot/test/unit/product_test.rb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/D/Tensho.ttf",
-		"/C/Sites/depot/db/seeds.rb",
 		"/C/Sites/depot/depot.sublime-workspace",
 		"/C/Sites/depot/depot.sublime-project"
 	],
@@ -201,38 +239,6 @@
 	"groups":
 	[
 		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 256,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								256,
-								256
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
 			"sheets":
 			[
 			]
@@ -255,18 +261,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -278,7 +277,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 74.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -286,6 +285,70 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"comb",
+				"db/migrate/20120713111048_combine_items_in_cart.rb"
+			],
+			[
+				"layou",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"cart",
+				"app/assets/stylesheets/carts.css.scss"
+			],
+			[
+				"line_item",
+				"app/models/line_item.rb"
+			],
+			[
+				"line",
+				"app/controllers/line_items_controller.rb"
+			],
+			[
+				"cartshow",
+				"app/views/carts/show.html.erb"
+			],
+			[
+				"deve",
+				"log/development.log"
+			],
+			[
+				"migr",
+				"db/migrate/20120713111048_combine_items_in_cart.rb"
+			],
+			[
+				"migra",
+				"db/migrate/20120713105427_add_quantity_to_line_items.rb"
+			],
+			[
+				"storeindex",
+				"app/views/store/index.html.erb"
+			],
+			[
+				"storecontroller",
+				"app/controllers/store_controller.rb"
+			],
+			[
+				"store",
+				"app/assets/stylesheets/store.css.scss"
+			],
+			[
+				"dbmig",
+				"db/migrate/20120709072324_create_products.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"pro",
+				"app/models/product.rb"
+			],
+			[
+				"linte",
+				"app/models/line_item.rb"
+			],
 			[
 				"applica",
 				"app/controllers/application_controller.rb"
@@ -313,10 +376,6 @@
 			[
 				"appli",
 				"app/assets/stylesheets/application.css"
-			],
-			[
-				"store",
-				"app/assets/stylesheets/store.css.scss"
 			],
 			[
 				"store/i",
