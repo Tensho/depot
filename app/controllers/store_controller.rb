@@ -1,6 +1,7 @@
 class StoreController < ApplicationController
   def index
     @products = Product.order(:price)
+    @cart = current_cart
     # счетчик посещения действия index контроллера store
     if session[:counter].nil?
       session[:counter] = 1
