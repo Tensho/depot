@@ -1,6 +1,8 @@
 class StoreController < ApplicationController
+  skip_before_filter :authorize
+
   def index
-    @products = Product.order(:price)
+    @products = Product.order(:title)
     @cart = current_cart
     # счетчик посещения действия index контроллера store
     if session[:counter].nil?

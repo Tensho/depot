@@ -18,3 +18,7 @@ Product.create(title: 'Famous Giraffe',
 	description: %{<p>This is a very famous giraffe Garold.</p>},
 	image_url: 'famous_giraffe.jpg',
 	price: 170.00)
+
+User.create(name: 'admin',
+  password: 'admin',
+  password_confirmation: 'admin')

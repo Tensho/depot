@@ -1,0 +1,10 @@
+<h3>Order from Tilda shop has been sent</h3>
+<p>
+  This message alert you we have sent your order:
+</p>
+
+<table>
+  <tr><th colspan='2'>Quantity</th><th>Description</th></tr>
+  <%# render @order.line_items %>
+  <%= render :partial => 'line_items/line_item_simple', :collection => @order.line_items, :as => :line_item %>
+</table>
