@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"se",
+				"set_i18n_locale_from_params"
+			],
+			[
+				"en",
+				"ensure_an_admin_remains"
+			],
+			[
+				"lin",
+				"link_to"
+			],
+			[
 				"un",
 				"unless	unless … end"
 			],
@@ -30,10 +42,6 @@
 			[
 				"users",
 				"users_url"
-			],
-			[
-				"lin",
-				"line_item"
 			],
 			[
 				"or",
@@ -70,10 +78,6 @@
 			[
 				"ca",
 				"cart_id"
-			],
-			[
-				"se",
-				"session"
 			],
 			[
 				"h",
@@ -179,16 +183,60 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "config/initializers/i18n.rb",
+			"settings":
+			{
+				"buffer_size": 99,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/locales/en.yml",
+			"settings":
+			{
+				"buffer_size": 1084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/locales/ru.yml",
+			"settings":
+			{
+				"buffer_size": 1120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/store/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/orders/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 911,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
+				"sni",
+				"Snippet: Lorem ipsum"
+			],
+			[
 				"Package Control: ",
-				"Package Control: Upgrade Package"
+				"Package Control: List Packages"
 			],
 			[
 				"pa",
@@ -235,7 +283,7 @@
 				"Snippet: validates_uniqueness_of"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -252,52 +300,60 @@
 	},
 	"file_history":
 	[
-		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Sites/depot/app/views/layouts/application.html.erb",
+		"/C/Sites/depot/app/controllers/application_controller.rb",
+		"/C/Sites/depot/config/routes.rb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Sites/depot/app/views/carts/_cart.html.erb",
+		"/C/Sites/depot/app/views/orders/new.html.erb",
+		"/C/Sites/depot/test/integration/user_stories_test.rb",
+		"/C/Sites/depot/db/seeds.rb",
+		"/C/Sites/depot/app/controllers/sessions_controller.rb",
+		"/C/Sites/depot/test/fixtures/users.yml",
+		"/C/Sites/depot/test/functional/sessions_controller_test.rb",
+		"/D/Download/code/rails32/depot_r/db/seeds.rb",
+		"/C/Sites/depot/test/functional/users_controller_test.rb",
+		"/C/Sites/depot/test/test_helper.rb",
+		"/C/Sites/depot/app/views/line_items/_line_item_simple.html.erb",
+		"/C/Sites/depot/app/views/order_notifier/shipped.html.erb",
+		"/C/Sites/depot/test/fixtures/orders.yml",
+		"/C/Sites/depot/test/functional/order_notifier_test.rb",
+		"/C/Sites/depot/app/mailers/order_notifier.rb",
+		"/C/Sites/depot/config/environment.rb",
+		"/C/Sites/depot/config/environments/development.rb",
+		"/C/Sites/depot/app/controllers/orders_controller.rb",
+		"/C/Sites/depot/app/controllers/users_controller.rb",
+		"/C/Sites/depot/app/views/order_notifier/shipped.text.erb",
+		"/C/Sites/depot/app/views/order_notifier/recieved.text.erb",
+		"/C/Sites/depot/app/views/line_items/_line_item.text.erb",
+		"/C/Sites/depot/test/fixtures/products.yml",
+		"/C/Sites/depot/test/fixtures/line_items.yml",
+		"/C/Sites/depot/app/controllers/carts_controller.rb",
+		"/C/Sites/depot/app/models/user.rb",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/JSON.sublime-settings",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/C/Documents and Settings/andrey/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Sites/depot/test/fixtures/users.yml",
-		"/C/Sites/depot/test/functional/sessions_controller_test.rb",
-		"/C/Sites/depot/app/controllers/orders_controller.rb",
 		"/C/Sites/depot/app/controllers/line_items_controller.rb",
-		"/C/Sites/depot/app/controllers/carts_controller.rb",
 		"/C/Sites/depot/app/controllers/store_controller.rb",
 		"/C/Sites/depot/app/controllers/admin_controller.rb",
 		"/C/Sites/depot/app/views/admin/index.html.erb",
 		"/C/Sites/depot/app/views/sessions/new.html.erb",
-		"/C/Sites/depot/app/controllers/sessions_controller.rb",
-		"/C/Sites/depot/app/controllers/application_controller.rb",
-		"/C/Sites/depot/config/routes.rb",
 		"//www/site/driver/drivers.pl",
 		"/D/Sandbox/perl/DB/drivers.pl",
-		"/C/Sites/depot/test/test_helper.rb",
 		"/C/Sites/depot/app/views/carts/new.html.erb",
 		"/C/Sites/depot/app/views/line_items/new.html.erb",
 		"/C/Sites/depot/app/views/carts/_form.html.erb",
 		"/C/Sites/depot/app/views/line_items/_form.html.erb",
-		"/C/Sites/depot/app/models/user.rb",
 		"/C/Sites/depot/app/views/users/index.html.erb",
-		"/C/Sites/depot/test/functional/users_controller_test.rb",
-		"/C/Sites/depot/app/controllers/users_controller.rb",
 		"/C/Sites/depot/app/views/users/_form.html.erb",
 		"/C/Sites/depot/app/views/users/show.html.erb",
-		"/C/Sites/depot/test/integration/user_stories_test.rb",
-		"/C/Sites/depot/app/mailers/order_notifier.rb",
-		"/C/Sites/depot/test/functional/order_notifier_test.rb",
 		"/C/Sites/depot/test/functional/orders_controller_test.rb",
 		"/C/Sites/depot/app/views/order_notifier/received.text.erb",
-		"/C/Sites/depot/app/views/line_items/_line_item.text.erb",
-		"/C/Sites/depot/app/views/order_notifier/shipped.html.erb",
-		"/C/Sites/depot/app/views/order_notifier/shipped.text.erb",
 		"/C/Sites/depot/app/views/line_items/_line_item.html.erb",
-		"/C/Sites/depot/test/fixtures/orders.yml",
-		"/C/Sites/depot/test/fixtures/line_items.yml",
 		"/C/Sites/depot/app/assets/stylesheets/application.css.scss",
 		"/C/Sites/depot/app/assets/stylesheets/products.css.scss",
-		"/C/Sites/depot/config/environments/development.rb",
 		"/C/Sites/depot/app/controllers/products_controller.rb",
-		"/C/Sites/depot/config/environment.rb",
 		"/D/Sandbox/perl/Module/Bestiary.pm",
 		"/D/Work/Site/script/db_all_fb_mysql.pl",
 		"/D/Work/Site/script/db_export_data_fb_mysql.pl",
@@ -308,7 +364,6 @@
 		"/C/Sites/depot/script/load_orders.rb",
 		"/C/Sites/depot/test/functional/products_controller_test.rb",
 		"/C/Sites/depot/app/models/product.rb",
-		"/C/Sites/depot/app/views/carts/_cart.html.erb",
 		"/C/Sites/depot/app/views/products/who_bought.html.erb",
 		"/C/Sites/depot/Gemfile",
 		"/C/Sites/depot/app/views/products/who_bought.atom.builder",
@@ -317,12 +372,9 @@
 		"/C/Sites/depot/app/views/line_items/create.js.erb",
 		"/C/Sites/depot/app/models/order.rb",
 		"/C/Sites/depot/app/views/orders/_form.html.erb",
-		"/C/Sites/depot/app/views/orders/new.html.erb",
-		"/C/Sites/depot/test/fixtures/products.yml",
 		"/C/Sites/depot/app/models/cart.rb",
 		"/C/Sites/depot/app/models/line_item.rb",
 		"/C/Sites/depot/app/views/line_items/decrement.js.erb",
-		"/C/Sites/depot/app/views/layouts/application.html.erb",
 		"/C/Sites/depot/test/functional/store_controller_test.rb",
 		"/C/Sites/depot/app/assets/stylesheets/carts.css.scss",
 		"/C/Sites/depot/app/helpers/application_helper.rb",
@@ -344,7 +396,6 @@
 		"/C/Sites/depot/app/views/line_items/index.html.erb",
 		"/C/Sites/depot/log/development.log",
 		"/C/Sites/depot/db/migrate/20120709072324_create_products.rb",
-		"/C/Sites/depot/db/seeds.rb",
 		"/C/Sites/depot/db/migrate/20120713105427_add_quantity_to_line_items.rb",
 		"/C/Sites/depot/db/migrate/20120713060210_create_line_items.rb",
 		"/C/Sites/depot/app/assets/stylesheets/store.css.scss",
@@ -393,8 +444,145 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "config/initializers/i18n.rb",
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/locales/en.yml",
+					"settings":
+					{
+						"buffer_size": 1084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/locales/ru.yml",
+					"settings":
+					{
+						"buffer_size": 1120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/store/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/orders/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -440,6 +628,118 @@
 		"selected_items":
 		[
 			[
+				"_form",
+				"app/views/orders/_form.html.erb"
+			],
+			[
+				"ordernew",
+				"app/views/orders/new.html.erb"
+			],
+			[
+				"_cart",
+				"app/views/carts/_cart.html.erb"
+			],
+			[
+				"storein",
+				"app/views/store/index.html.erb"
+			],
+			[
+				"aplhtm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"app",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"ust",
+				"test/integration/user_stories_test.rb"
+			],
+			[
+				"sec",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"sesc",
+				"test/functional/sessions_controller_test.rb"
+			],
+			[
+				"test_h",
+				"test/test_helper.rb"
+			],
+			[
+				"user",
+				"test/functional/users_controller_test.rb"
+			],
+			[
+				"sess",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"sessco",
+				"test/functional/sessions_controller_test.rb"
+			],
+			[
+				"_line",
+				"app/views/line_items/_line_item.text.erb"
+			],
+			[
+				"rec",
+				"app/views/order_notifier/received.text.erb"
+			],
+			[
+				"order",
+				"app/controllers/orders_controller.rb"
+			],
+			[
+				"usercon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"cart",
+				"app/controllers/carts_controller.rb"
+			],
+			[
+				"userco",
+				"test/functional/users_controller_test.rb"
+			],
+			[
+				"sesco",
+				"test/functional/sessions_controller_test.rb"
+			],
+			[
+				"orderno",
+				"app/mailers/order_notifier.rb"
+			],
+			[
+				"dev",
+				"config/environments/development.rb"
+			],
+			[
+				"en",
+				"config/environment.rb"
+			],
+			[
+				"usercnt",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"userrb",
+				"app/models/user.rb"
+			],
+			[
+				"se",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"apperb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
 				"test_helper",
 				"test/test_helper.rb"
 			],
@@ -454,10 +754,6 @@
 			[
 				"carc",
 				"app/controllers/carts_controller.rb"
-			],
-			[
-				"sesc",
-				"app/controllers/sessions_controller.rb"
 			],
 			[
 				"storeco",
@@ -480,10 +776,6 @@
 				"app/controllers/admin_controller.rb"
 			],
 			[
-				"_form",
-				"app/views/line_items/_form.html.erb"
-			],
-			[
 				"form",
 				"app/views/carts/_form.html.erb"
 			],
@@ -500,16 +792,8 @@
 				"app/controllers/sessions_controller.rb"
 			],
 			[
-				"rout",
-				"config/routes.rb"
-			],
-			[
 				"ussh",
 				"app/views/users/show.html.erb"
-			],
-			[
-				"usercon",
-				"test/functional/users_controller_test.rb"
 			],
 			[
 				"_for",
@@ -524,28 +808,12 @@
 				"app/views/users/index.html.erb"
 			],
 			[
-				"userco",
-				"app/controllers/users_controller.rb"
-			],
-			[
 				"user.rb",
 				"app/models/user.rb"
 			],
 			[
-				"orderno",
-				"app/mailers/order_notifier.rb"
-			],
-			[
-				"order",
-				"test/functional/orders_controller_test.rb"
-			],
-			[
 				"ordc",
 				"app/controllers/orders_controller.rb"
-			],
-			[
-				"user",
-				"test/integration/user_stories_test.rb"
 			],
 			[
 				"orc",
@@ -586,14 +854,6 @@
 			[
 				"pro",
 				"app/models/product.rb"
-			],
-			[
-				"_cart",
-				"app/views/carts/_cart.html.erb"
-			],
-			[
-				"cart",
-				"app/controllers/carts_controller.rb"
 			],
 			[
 				"line",
@@ -644,14 +904,6 @@
 				"app/models/cart.rb"
 			],
 			[
-				"app",
-				"app/assets/stylesheets/application.css.scss"
-			],
-			[
-				"ordernew",
-				"app/views/orders/new.html.erb"
-			],
-			[
 				"orte",
 				"test/functional/orders_controller_test.rb"
 			],
@@ -666,10 +918,6 @@
 			[
 				"controller",
 				"app/controllers/store_controller.rb"
-			],
-			[
-				"_line",
-				"app/views/line_items/_line_item.html.erb"
 			],
 			[
 				"storehtml",

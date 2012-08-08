@@ -8,16 +8,23 @@
 </head>
 <body class='<%= controller.controller_name %>'>
   <div id='banner'>
+    <%= form_tag store_path, class: 'locale' do %>
+      <%= select_tag 'set_locale',
+          options_for_select(LANGUAGES, I18n.locale.to_s),
+          onchange: 'this.form.submit()' %>
+      <%= submit_tag 'submit' %>
+      <%= javascript_tag "$('.locale input').hide()" %>
+    <% end %>
     <%#= image_tag('logo.jpg') %>
-    <%= @page_title || 'Tilda Shop' %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id='columns'>
     <div id='side'>
       <ul>
-        <li><a href='/'>Home</a></li>
-        <li><a href='http://.../faq'>Questions</a></li>
-        <li><a href='http://.../news'>News</a></li>
-        <li><a href='http://.../contact'>Contact</a></li>
+        <li><a href='/'><%= t('.home') %></a></li>
+        <li><a href='http://.../faq'><%= t('.questions') %></a></li>
+        <li><a href='http://.../news'><%= t('.news') %></a></li>
+        <li><a href='http://.../contact'><%= t('.contact') %></a></li>
       </ul>
 
       <%# администратор %>
@@ -30,7 +37,6 @@
         <%= button_to 'Logout', logout_path, method: :delete %>
       <% end %>
 
-      <div id='time'><%= Time.now %><br></div>
       <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
           <%= render @cart %>
